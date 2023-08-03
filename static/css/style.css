@@ -1,0 +1,144 @@
+body {
+	background-color: #F5DEB3;
+}
+
+
+.board {
+	margin: 80px auto;
+	width: 600px;
+	height: 600px;
+	background-color: #8B4513;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.row {
+	display: flex;
+}
+
+
+.square {
+	width: 75px;
+	height: 75px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 40px;
+	cursor: pointer;
+	position: relative;
+}
+
+
+.black {
+	background-color: #9D5A13;
+}
+
+
+.white {
+	background-color: #DCA761;
+}
+
+
+.checker {
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	background-color: black;
+	align-items: center;
+	/*position: alight;
+	top: 5px;
+	left: 5px;*/
+}
+
+
+.checker.white {
+	background-color: #FFEBC7;
+}
+
+
+.selected {
+	border: 2px solid blue;
+}
+
+
+div.select-color .selected{
+	border: 4px solid blue;
+}
+
+
+.line {
+	position: absolute;
+	background-color: black;
+}
+
+
+.vertical-line {
+	width: 2px;
+	height: 400px;
+	top: 0;
+	left: 24px;
+}
+
+
+ .horizontal-line {
+	width: 400px;
+	height: 2px;
+	top: 24px;
+	left: 0;
+}
+
+
+.start-game {
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+}
+
+.start-game-button{
+	width: 180px;
+	height: 60px;
+	background-color: #23DC3E;
+	border-radius: 10px;
+}
+
+
+.select-color{
+	display: flex;
+	margin-left: 18px;
+}
+
+
+.select-color div{
+	display: inline-block;
+	width: 110px;
+	height: 60px;
+}
+
+
+.select-black{
+	background-color: #080818;
+}
+
+
+.select-white{
+	background-color: #FFFFF2;
+}
+
+
+.hit {
+	opacity: 0.5
+}
+
+
+.queen.black{
+	background-image: url("../images/queen_black.png");
+	background-size: contain;
+}
+
+
+.queen.white{
+	background-image: url("../images/queen_white.png");
+	background-size: contain;
+}

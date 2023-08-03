@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/reset_style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+	<div class="start-game">
+		<button class="start-game-button">start game</button>
+		<div class="select-color">
+	  		<div class="select-black selected"></div>
+	  		<div class="select-white"></div>
+		</div>
+	</div>
+	<div class="board">
+		<div class="row" id="row-0">					
+			<div class="square white" id="sq-0"></div>
+			<div class="square black" id="sq-1"></div>
+			<div class="square white" id="sq-2"></div>
+			<div class="square black" id="sq-3"></div>
+			<div class="square white" id="sq-4"></div>
+			<div class="square black" id="sq-5"></div>
+			<div class="square white" id="sq-6"></div>
+			<div class="square black" id="sq-7"></div>
+		</div>
+		<div class="row" id="row-1">					
+			<div class="square black" id="sq-0"></div>
+			<div class="square white" id="sq-1"></div>
+			<div class="square black" id="sq-2"></div>
+			<div class="square white" id="sq-3"></div>
+			<div class="square black" id="sq-4"></div>
+			<div class="square white" id="sq-5"></div>
+			<div class="square black" id="sq-6"></div>
+			<div class="square white" id="sq-7"></div>
+		</div>
+		<div class="row" id="row-2">					
+			<div class="square white" id="sq-0"></div>
+			<div class="square black" id="sq-1"></div>
+			<div class="square white" id="sq-2"></div>
+			<div class="square black" id="sq-3"></div>
+			<div class="square white" id="sq-4"></div>
+			<div class="square black" id="sq-5"></div>
+			<div class="square white" id="sq-6"></div>
+			<div class="square black" id="sq-7"></div>
+		</div>
+		<div class="row" id="row-3">					
+			<div class="square black" id="sq-0"></div>
+			<div class="square white" id="sq-1"></div>
+			<div class="square black" id="sq-2"></div>
+			<div class="square white" id="sq-3"></div>
+			<div class="square black" id="sq-4"></div>
+			<div class="square white" id="sq-5"></div>
+			<div class="square black" id="sq-6"></div>
+			<div class="square white" id="sq-7"></div>
+		</div>
+		<div class="row" id="row-4">					
+			<div class="square white" id="sq-0"></div>
+			<div class="square black" id="sq-1"></div>
+			<div class="square white" id="sq-2"></div>
+			<div class="square black" id="sq-3"></div>
+			<div class="square white" id="sq-4"></div>
+			<div class="square black" id="sq-5"></div>
+			<div class="square white" id="sq-6"></div>
+			<div class="square black" id="sq-7"></div>
+		</div>
+		<div class="row" id="row-5">					
+			<div class="square black" id="sq-0"></div>
+			<div class="square white" id="sq-1"></div>
+			<div class="square black" id="sq-2"></div>
+			<div class="square white" id="sq-3"></div>
+			<div class="square black" id="sq-4"></div>
+			<div class="square white" id="sq-5"></div>
+			<div class="square black" id="sq-6"></div>
+			<div class="square white" id="sq-7"></div>
+		</div>
+		<div class="row" id="row-6">					
+			<div class="square white" id="sq-0"></div>
+			<div class="square black" id="sq-1"></div>
+			<div class="square white" id="sq-2"></div>
+			<div class="square black" id="sq-3"></div>
+			<div class="square white" id="sq-4"></div>
+			<div class="square black" id="sq-5"></div>
+			<div class="square white" id="sq-6"></div>
+			<div class="square black" id="sq-7"></div>
+		</div>
+		<div class="row" id="row-7">					
+			<div class="square black" id="sq-0"></div>
+			<div class="square white" id="sq-1"></div>
+			<div class="square black" id="sq-2"></div>
+			<div class="square white" id="sq-3"></div>
+			<div class="square black" id="sq-4"></div>
+			<div class="square white" id="sq-5"></div>
+			<div class="square black" id="sq-6"></div>
+			<div class="square white" id="sq-7"></div></div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+	<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
